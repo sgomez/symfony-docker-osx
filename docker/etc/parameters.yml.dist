@@ -1,0 +1,3 @@
+parameters:
+    database_host: db
+    simplesamlphp_installation_path: /var/simplesamlphp/

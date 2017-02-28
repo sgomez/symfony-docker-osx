@@ -1,0 +1,12 @@
+version: "2"
+options:
+  verbose: true
+syncs:
+  skel-unison-sync:
+    src: "./skel"
+    dest: "/var/www/symfony"
+    sync_user: 'www-data'
+    sync_userid: '33'
+    sync_args: '-prefer newer -copyonconflict'
+    sync_excludes: ['.*/.git', "var/cache", "var/logs", "var/sessions" ]
+    watch_excludes: ['.*/.git' ]
